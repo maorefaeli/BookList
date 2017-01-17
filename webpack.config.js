@@ -1,7 +1,7 @@
-const webpack = require('webpack'); //to access built-in plugins
+// const webpack = require('webpack'); // to access built-in plugins
 
 module.exports = {
-    entry: ['./src/index.js'],
+    entry: ['./src/index.jsx'],
     output: {
         path: __dirname,
         publicPath: '/',
@@ -24,6 +24,6 @@ module.exports = {
     devServer: {
         historyApiFallback: true,
         contentBase: './'
-    },
-    //plugins: [new webpack.optimize.UglifyJsPlugin()]
+    }
+    // plugins: [new webpack.optimize.UglifyJsPlugin()]
 };
