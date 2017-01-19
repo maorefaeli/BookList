@@ -9,7 +9,7 @@ import reducers from './reducers';
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
 ReactDOM.render((
-    <Provider store={createStoreWithMiddleware(reducers)}>
-        <App name="maor"/>
-    </Provider>
+  <Provider store={createStoreWithMiddleware(reducers)}>
+    <App/>
+  </Provider>
 ), document.querySelector('.container'));
